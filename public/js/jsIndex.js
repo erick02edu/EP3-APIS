@@ -135,7 +135,7 @@ function ReconocerVoz(){
         VentanaMicro[i].style.display="block";
     }
 
-    
+
     recognition.start();/*Empieza a grabar */
 
 }
@@ -231,50 +231,3 @@ function CerrarPreload(){
 
     //alert('Funciona');
 }
-
-// API
-
-
-const cargarPeliculas= async()=>{
-    try{
-        const respuesta=await fetch('https://api.themoviedb.org/3/movie/popular?api_key=b390f6a60947b43f976d9e029bcdac76&language=es-Mx');
-        console.log(respuesta);
-
-        //Si la respuesta es corrcta
-        if(respuesta.status==200){
-            const datos=await respuesta.json();
-
-            let peliculas='';
-            datos.results.forEach(pelicula => {
-
-                console.log(pelicula.video);
-                peliculas+=`<div class="Peliculas"><img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt="" width="100%" height="65%"><div class="InfoPelicula"><h1 class="TituloPelicula">${pelicula.title}</h1><a href="#"></a> <p class="Genero">${pelicula.overview}</p> </div>  </div> `;
-                //console.log(pelicula.title)
-            });
-
-            document.getElementById('Recomendaciones').innerHTML=peliculas
-            
-
-        }
-        else if(respuesta.status==401){
-            console.log("Error de autenticacion");
-        }
-        else if(respuesta.status==404){
-            console.log("Pelicula no encontrada");
-        }
-    }
-    catch(error){
-        console.log(error);
-    }
-
-
-}
-
-cargarPeliculas();
-
-
-
-
-
-
-

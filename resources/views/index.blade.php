@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/Estilo.css') }}">
+    <link rel="stylesheet" href="css/Estilo.css">
     <title>PelisXDF</title>
+    
 </head>
 <body class="hidden" onload="miFuncion();">
 
@@ -111,7 +112,7 @@
             </li>
 
             <li class="Opciones">
-                <a href="{{ url('persona/create') }}">Peliculas</a>
+                <a href="">Peliculas</a>
             </li>
 
 
@@ -213,14 +214,14 @@
     </div>
 
 
-        <h2 id="TextRec">Populares</h2>
-        <article id="Recomendaciones" class="Recomendaciones">
+    
+        <article id="Recomendaciones">
             
             
-            
+            <h2>Recomendaciones</h2>
 
             
-        <!--
+
                 <div class="Peliculas">
                     
                     <img src="img/Peliculas/Aquaman.jpg" alt="" width="100%" height="65%">
@@ -245,16 +246,16 @@
 
                 <div class="Peliculas">
 
-                    <img src="img/Peliculas/Eso.jpeg" alt="" width="100%" height="65%">
+                    <img src="img/Peliculas/BlackAdam.jpg" alt="" width="100%" height="65%">
 
                     <div class="InfoPelicula">
 
 
                         
                        
-                        <p class="TituloPelicula">Eso</p>
-                        <a href="https://www.youtube.com/watch?v=crDNzugmuGY" target="_blank"><button class="botonVer"> Ver</button></a>
-                         <p class="Genero" >Genero:Terror</p>
+                        <p class="TituloPelicula">Black Adam</p>
+                        <a href="https://www.youtube.com/watch?v=kOFTZWyaOgc" target="_blank"><button class="botonVer"> Ver</button></a>
+                         <p class="Genero" >Genero:Accion</p>
 
                         
 
@@ -282,74 +283,14 @@
 
                 </div>
 
-                <div class="Peliculas">
-
-                    <img src="img/Peliculas/Naruto.jpg" alt="" width="100%" height="65%">
-
-                    <div class="InfoPelicula">
-
-
-                        
-                        
-                        <p class="TituloPelicula">Naruto</p>
-                        <a href="https://www.youtube.com/watch?v=QczGoCmX-pI" target="_blank"><button class="botonVer"> Ver</button></a>
-                        <p class="Genero">Genero:Anime</p>
-
-
-
-                    </div>
-
-                </div>
-
-
-                <div class="Peliculas">
-
-                    <img src="img/Peliculas/Naruto.jpg" alt="" width="100%" height="65%">
-
-                    <div class="InfoPelicula">
-
-
-                        
-                        
-                        <p class="TituloPelicula">Naruto</p>
-                        <a href="https://www.youtube.com/watch?v=QczGoCmX-pI" target="_blank"><button class="botonVer"> Ver</button></a>
-                        <p class="Genero">Genero:Anime</p>
-
-
-
-                    </div>
-
-                </div>
+ 
                 
                 
-                <div class="Peliculas">
 
-                    <img src="img/Peliculas/Naruto.jpg" alt="" width="100%" height="65%">
-
-                    <div class="InfoPelicula">
-
-
-                        
-                        
-                        <p class="TituloPelicula">Naruto</p>
-                        <a href="https://www.youtube.com/watch?v=QczGoCmX-pI" target="_blank"><button class="botonVer"> Ver</button></a>
-                        <p class="Genero">Genero:Anime</p>
-
-
-
-                    </div>
-
-                </div>
-            -->
         </article>
 
-    <br><br><br><br>
+    <br><br>
         
-    
-
-    <footer>
-        
-    </footer>
 
     <div id="capa">
 
@@ -357,11 +298,8 @@
 
     </div>
 
-
-    <br>
-    <br>
     <script src="https://kit.fontawesome.com/05dc881a1f.js" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/jsIndex.js') }}"></script>
+    <script src="js/jsIndex.js"></script>
 
 </body>
 </html>

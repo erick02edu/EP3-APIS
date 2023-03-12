@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\PeliculasController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PeliculaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +22,11 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get("/Inicio",[PeliculaController::class,"ConsultarTabla"])->name("crud.peliculas");
+
+
+Route::resource('pelicula', PeliculaController::class);
 
 Auth::routes();
 

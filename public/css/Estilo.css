@@ -8,6 +8,8 @@ body{
 
     background-color: rgba(1, 1, 1, 0.87);
 
+    /**/
+
 }
 /*Dar estilo al scroll*/
 
@@ -179,29 +181,14 @@ body::-webkit-scrollbar-thumb{
     border-radius: 10px;
     transition: transform 0.8s ease;
     margin-top: 3%;
-    margin-left: 4%;
-    width: 15%;
+    margin-left: 2.3%;
+    width: 30%;
     height: 80%;
     background-color: rgba(9, 9, 9, 0.9);
     float: left;
     color: white;
     box-shadow:5px 5px 5px 5px rgba(14, 14, 14, 0.8);
-
-    overflow-y: hidden;
-}
-
-#TextRec{
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    margin-left: 4%;
-    margin-top: 2%;
-
-}
-
-
-.Peliculas:hover{
-    overflow-y: scroll;
+    
 }
 
 .Peliculas:hover{
@@ -215,18 +202,15 @@ body::-webkit-scrollbar-thumb{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding-left:5%;
     padding-top: 5%; 
-    font-size: 8px;
+    font-size: 12px;
     
 }
 
-footer{
-    margin-top: 23%;
-}
 
 
 .TituloPelicula{
-    margin-bottom:9%;
-    font-size: 16px;
+    margin-bottom:3%;
+    font-size: 20px;
     display: inline;
 }
 
@@ -559,7 +543,6 @@ li{
     transition: all 0.7s ease;
     visibility: hidden;
 }
-
 
 
 /*Preloader*/

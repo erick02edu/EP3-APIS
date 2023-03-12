@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.alinear li img{
+  
+  border-radius: 30px;
+}
+
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+
+
+/*Barra del scroll*/
+body::-webkit-scrollbar-thumb{
+    background: red;
+
+}
+
+#MenuLateral{
+  position: fixed;
+  height: 100%;
+  width: 15%;
+  transition: all 0.7s ease;
+}
+
+#rellenar{
+  background: rgb(255, 255, 255);
+  height: 100%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+#rellenar a{
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+
+.opciones:hover{
+
+  background: rgba(223, 221, 221, 0.633);
+}
+.opciones{
+  background: rgb(255, 255, 255); 
+  color: black;
+  transition: 0.01s;
+  /*color: red; */
+}
+
+#ListaBar{
+  padding-top: 2%;
+  padding-bottom: 7%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  padding-bottom: 15%;
+  transition: all 0.7s ease;
+}
+
+#btnBar{
+  transform: translateY(-15%);
+  /*transform: translateX(120%);*/
+  margin-left: 30%;
+  transition: all 0.7s ease;
+  z-index: 100;
+
+}
+
+#ListaBar li{
+  padding-left: 15%;
+  display: inline-block;
+
+}
+
+#Logo{
+  transform: translateY(7%);
+  padding-top: 10%; 
+}
+
+#Logo2{
+  border-radius: 35px;
+  margin-right: 10px;
+}
+
+#Logo img{
+  border-radius: 35px;
+  padding-top: 2%;
+}
+
+#OpcionBar li{
+  display: inline;
+}
+
+#Bar{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.alinear{
+  overflow: hidden;
+  padding-left: 15%;
+  transition: all 0.7s ease;
+}
+
+.Texto{
+  display:inline;
+  transition: all 0.1s ease;
+
+  /*opacity: 0;*//*Oculta el texto*/
+}
+
+.alinear2{
+  padding-left: 15%;
+}
+.alinear li{
+  display: inline-block;
+  padding-top: 10%;
+  padding-bottom: 13%;
+  padding-left: 2%;
+
+}
+
+
+
+#Bienvenida{
+  background: white;
+  position: absolute;
+  top: 5%;
+  left: 17%;
+  /*left: 7%;*/
+  overflow: hidden;
+  width: 80%;
+  /*width: 90%;*/
+  height: 27%;
+  border-radius: 7px;
+
+  transition: all 0.6s ease;
+}
+#btnComenzar{
+  padding:1% 5%;
+  margin-left: 2%;
+  margin-top: 2%;
+  background: rgb(231, 48, 48);
+  color: white;
+  border-radius: 6px;
+}
+#TxtBienvenida{
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 2% 2%;
+}
+#Saludo{
+  padding-left: 2%;
+}
+
+#btnAñadir{
+  position: absolute;
+  left: 90%;
+  top: 8%;
+  z-index: 100;
+}
+#Gestion{
+  position: absolute;
+  overflow-y: scroll;
+  left: 17%;
+  /*left: 7%;*/
+
+  width: 80%;
+  /*width: 90%;*/
+  max-height: 95%;
+  border-radius: 7px;
+  transition: all 0.6s ease;
+  display: inline;
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+
+
+
+
+#Gestion ul{
+  display: inline;
+}
+
+
+
+#btnAdd{
+  position: absolute;
+  padding:1% 4%;
+  
+  left: 75%;
+  background: rgb(231, 48, 48);
+  color: white;
+  border-radius: 6px;
+  z-index: 100;
+}
+
+#btnAdd:hover{
+  background: rgb(245, 179, 179);
+}
+#Ajustes{
+  position: absolute;
+  top: 3%;
+  left: 19%;
+  /*left: 7%;*/
+  overflow: hidden;
+  width: 80%;
+  /*width: 90%;*/
+  height: 27%;
+  border-radius: 7px;
+  transition: all 0.6s ease;
+  display: inline;
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+
+
+#Bugs{
+  position: absolute;
+  top: 3%;
+  left: 19%;
+  /*left: 7%;*/
+  overflow: hidden;
+  width: 80%;
+  /*width: 90%;*/
+  height: 27%;
+  border-radius: 7px;
+  transition: all 0.6s ease;
+  display: inline;
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#CuadroAdd{
+  position: absolute;
+  top: 16%;
+  left: 17%;
+  /*left: 7%;*/
+  overflow: hidden;
+  width: 77%;
+  /*width: 90%;*/
+  height: 75%;
+  border-radius: 7px;
+  transition: all 0.6s ease;
+  display: inline;
+  opacity: 0;
+  font-weight: 100;
+  background: white;
+  padding-left:2%;
+  padding-top: 2%;
+}
+
+#btnPrueba{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+
+
+
+/*Preloader*/
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+
+
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #ff0000;
+    animation: lds-facebook 0.9s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    30%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  #cargado{
+    transition: transform 1s ease;
+  }
+
+  .centrado{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 102;
+    background-color: black;
+  }
+
+  .hidden{
+    overflow: hidden;
+  }
+
+  #btn-switch{
+    display: none;
+  }
+
+  
+
+  .lbl-switch{
+    position: absolute;
+    margin-top: 4%;
+    width: 2%;
+    display: inline-block;
+    width: 35px;
+    height: 22px;
+    background-color: #6f6a6a;
+    transition: .4s;
+    border-radius: 34px;
+
+  }
+
+  #btn-switch:checked~ .lbl-switch{
+
+    background: red;
+    
+  }
+
+  #btn-switch:checked~ .lbl-switch:after{
+    left: 15px;
+  }
+
+  .lbl-switch:after{
+    position: absolute;
+    content:'';
+    width: 17px;
+    height: 17px;
+    background: #f4f4f4 ;
+    border-radius: 100px;
+    left: 2px;
+    top: 2px;
+    transition: 0.3s;
+  }
+
+
+
+
+
